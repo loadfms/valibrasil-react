@@ -14,10 +14,3 @@ const render = (Component) => {
 };
 
 render(Root);
-
-if (module.hot) {
-  module.hot.accept('./config/Root', () => {
-    const newApp = require('./config/Root').default;
-    render(newApp);
-  });
-}

@@ -2,9 +2,9 @@ import React from 'react';
 import NewProducts from './NewProducts';
 
 const Home = () => {
-    return (
-        <NewProducts />
-    );
+  return (
+    <NewProducts />
+  );
 };
 
 export default Home;
