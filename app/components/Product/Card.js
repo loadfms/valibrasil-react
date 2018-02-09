@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import slugify from 'slugify';
 
-const Card = () => {
+const Card = (props) => {
   return (
-    <Link to='/product/1'>
+    <Link to={'/produto/' + slugify(props.product.name.toLowerCase()) + '/' + props.product.id}>
       <li className="products--list__card">
-        <img alt="product" src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/m/ac/macbook/select/macbook-select-space-gray-201706?wid=452&hei=420&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1505775431709" />
-        <span className="products--list__card__title">Macbook Air</span>
-        <Link to='/product/1' className="general--button">Home</Link>
+        <img alt="product" src={props.product.image} />
+        <span className="products--list__card__title">{props.product.name}</span>
+        <Link to={'/produto/' + slugify(props.product.name.toLowerCase()) + '/' + props.product.id} className="general--button">Detalhe</Link>
       </li>
     </Link>
   );
