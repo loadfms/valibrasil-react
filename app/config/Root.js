@@ -1,14 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import App from '../components/App';
+// import React from 'react';
+// import { BrowserRouter as Router, Route } from 'react-router-dom';
+// import App from '../components/App';
 
-const Root = () => {
+// const Root = () => {
+//   return (
+//     <Router>
+//       <Route path="/" component={App} />
+//     </Router>
+//   );
+// };
+
+// export default Root;
+
+import React from 'react';
+import Top from './Header/Top';
+import Home from './Home/Home';
+
+const App = () => {
   return (
-    <Router>
-      <Route path="/" component={App} />
-    </Router>
+    <div>
+      <Top />
+      <Home />
+    </div>
   );
 };
 
-export default Root;
-
+export default App;

@@ -1,6 +1,5 @@
 import React from 'react';
 import Menu from './Menu';
-import Slider from './Slider';
 import Info from './Info';
 
 const Top = () => {
@@ -14,9 +13,6 @@ const Top = () => {
       </div>
       <div className="header--menu">
         <Menu />
-      </div>
-      <div className="header--slider">
-        <Slider />
       </div>
     </div>
   );
