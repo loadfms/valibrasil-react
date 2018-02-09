@@ -10,20 +10,21 @@ body{
 .general{
   &--button{
     background: $color3;
-    padding: 11px 19px 12px;
-    padding-top: 11px;
-    padding-right: 19px;
-    padding-bottom: 12px;
-    padding-left: 19px;
+    padding: 13px 21px 15px;
     font-size: 14px;
     line-height: 20px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
-    border: 2px solid $color3;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: white;
+    transition: background-color 0.2s ease;    
+    border:0;
+
+    &:hover{
+      background: $color4;
+    }
   }
 }
 
@@ -52,11 +53,18 @@ body{
       padding: 0;
       margin: 0;
       li{
+        cursor: pointer;
+        text-transform: uppercase;
         font-size: 18px;
         font-weight: bold;
         display: inline-block;
-        margin-left: 20px;
+        margin: 0 16px;
         color: $color2;
+        transition: color 0.2s ease;
+        
+        &:hover{
+          color:$color3;
+        }
       }
     }
   }
