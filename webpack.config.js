@@ -3,7 +3,6 @@ const { resolve } = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 const config = {
   devtool: 'cheap-module-eval-source-map',
