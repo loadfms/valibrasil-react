@@ -47,7 +47,8 @@
     "css-loader": "0.28.9",
     "file-loader": "1.1.6",
     "sass-loader": "6.0.6",
-    "slugify": "^1.2.9"     
+    "slugify": "^1.2.9",
+    "open-browser-webpack-plugin": "0.0.5" 
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -72,7 +73,7 @@
     "husky": "0.15.0-rc.2",
     "jest": "22.1.0",
     "node-sass": "4.7.2",
-    "open-browser-webpack-plugin": "0.0.5",
+   
     "react-addons-test-utils": "15.6.2",
     "react-test-renderer": "16.2.0",
     "rimraf": "2.6.2",
