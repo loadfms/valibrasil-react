@@ -50,9 +50,7 @@
     "slugify": "^1.2.9",
     "open-browser-webpack-plugin": "0.0.5",
     "style-loader": "0.19.1",
-    "url-loader": "0.6.2"
-  },
-  "devDependencies": {
+    "url-loader": "0.6.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.1.2",
