@@ -9,8 +9,6 @@ class NewProducts extends Component {
     this.state = {
       products: []
     }
-
-    this.loadproducts = this.loadproducts.bind(this);
   }
 
 
