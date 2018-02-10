@@ -28,7 +28,7 @@ class NewProducts extends Component {
   render() {
     return (
       <div className="newproducts">
-        <span className="newproducts--title">New Products</span>
+        <span className="newproducts--title">Novidades</span>
         <div className="newproducts--list">
           <ul className="products--list">
             {this.state.products.map((item, index) => (

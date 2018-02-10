@@ -11,7 +11,7 @@ body{
   &--button{
     text-decoration: none;
     cursor: pointer;
-    background: $color3;
+    background: $color6;
     padding: 13px 21px 15px;
     font-size: 14px;
     line-height: 20px;
@@ -22,10 +22,6 @@ body{
     color: white;
     transition: background-color 0.2s ease;    
     border:0;
-
-    &:hover{
-      background: $color4;
-    }
   }
 }
 
@@ -43,7 +39,7 @@ body{
     padding: 20px;
     img{
       width: 264px;
-      height: 52px;
+      height: 138px;
     }
   }
 
@@ -56,7 +52,7 @@ body{
       li{
         &.active{
           a{
-            color:$color3 !important;
+            color:$color6 !important;
           }
         }
         display: inline-block;
@@ -101,6 +97,23 @@ body{
   &--list{
     text-align: center;    
   }
+  &--banner{
+    margin: 20px 0;
+    background-color: #FD498C;
+    text-align: left;
+    padding: 90px;    
+    &__title{
+      color:white;
+      font-size: 35px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__subtitle{
+      display: block;
+      color:white;
+      font-size: 18px;
+    }
+  }
 }
 
 .products{
@@ -120,8 +133,8 @@ body{
         padding-bottom: 15px;
       }
       img{
-        width: 400px;
-        height: 308px;
+        width: 370px;
+        height: 285px;
       }
     }
   }
@@ -162,5 +175,21 @@ body{
     font-size: 12px;
     padding: 20px;
     opacity: .9;
+  }
+  &--about{
+    background-color: #FD498C;
+    text-align: left;
+    padding: 90px;    
+    &__title{
+      color:white;
+      font-size: 35px;
+      margin-bottom: 20px;    
+      display: block;  
+    }
+    &__subtitle{
+      display: block;
+      color:white;
+      font-size: 18px;
+    }
   }
 }
