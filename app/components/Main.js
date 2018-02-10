@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home/Index';
 import ProductDetail from './Product/Detail';
+import ProductList from './Product/List';
 
 // The Main component renders one of the three provided
 // Routes (provided that one matches). Both the /roster
@@ -12,6 +13,7 @@ const Main = () => (
   <main>
     <Switch>
       <Route exact path="/" component={Home} />
+      <Route exact path="/categoria/:name" component={ProductList} />
       <Route path="/produto/:name/:id" component={ProductDetail} />
     </Switch>
   </main>

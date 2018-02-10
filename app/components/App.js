@@ -3,12 +3,14 @@ import Top from './Header/Top';
 import Main from './Main';
 import Footer from './Footer/Index';
 
-const App = () => (
+const App = () => {
+  return (
   <div>
     <Top />
     <Main />
     <Footer />
   </div>
-);
+  );
+};
 
 export default App;

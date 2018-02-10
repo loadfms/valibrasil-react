@@ -54,6 +54,11 @@ body{
       padding: 0;
       margin: 0;
       li{
+        &.active{
+          a{
+            color:$color3 !important;
+          }
+        }
         display: inline-block;
         margin: 0 16px;
         a{
@@ -88,6 +93,13 @@ body{
   margin-top:20px;
   &--title{
     font-size: 35px;
+  }
+}
+
+.listproducts{
+  padding: 40px;
+  &--list{
+    text-align: center;    
   }
 }
 

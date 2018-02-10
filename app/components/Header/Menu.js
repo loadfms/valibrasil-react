@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import slugify from 'slugify';
 
 class Menu extends Component {
   constructor(props) {
@@ -24,12 +25,15 @@ class Menu extends Component {
   }
 
   render() {
-    console.log(this.state.items);
     if (this.state.items) {
       return (
         <ul>
           {this.state.items.map((item, index) => (
-            <li><Link to={'/' + item.name}>{item.name}</Link></li>
+            <li className={
+              (document.location.href.indexOf(slugify(item.name.toLowerCase())) > -1)
+              ? "active" 
+              : ""}>
+              <Link to={'/categoria/' + slugify(item.name.toLowerCase())}>{item.name}</Link></li>
           ))}
         </ul>
       );

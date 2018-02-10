@@ -4,7 +4,7 @@ import Info from './Info';
 
 const Top = () => {
   return (
-    <div className="header">
+    <div className="header" >
       <div className="header--info">
         <Info />
       </div>
@@ -14,7 +14,7 @@ const Top = () => {
       <div className="header--menu">
         <Menu />
       </div>
-    </div>
+    </div >
   );
 };
 
