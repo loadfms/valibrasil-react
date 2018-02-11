@@ -35,6 +35,11 @@ class Menu extends Component {
               : ""}>
               <Link to={'/categoria/' + slugify(item.name.toLowerCase())}>{item.name}</Link></li>
           ))}
+          <li className={
+              (document.location.href.indexOf('contato') > -1)
+              ? "active" 
+              : ""}>
+              <Link to='/contato'>Contato</Link></li>
         </ul>
       );
     }
