@@ -2,7 +2,7 @@ import React from 'react';
 
 const Info = () => {
   return (
-    <span>Fale conosco: (11) 98472-8821</span>
+    <span>Fale conosco: WhatsApp (11) 95030-0039</span>
   );
 };
 

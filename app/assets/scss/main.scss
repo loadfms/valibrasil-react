@@ -193,3 +193,20 @@ body{
     }
   }
 }
+
+.contact{
+  padding: 40px 90px;
+  &--content{
+    &__title{
+      margin:0;
+    }
+    &__subtitle{
+      display:block;
+    }
+    &__first{
+      float: left;
+      margin-right: 40px;
+    }
+  }
+
+}
