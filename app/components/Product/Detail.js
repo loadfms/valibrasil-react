@@ -16,7 +16,7 @@ class Detail extends Component {
 
   loaditem() {
     let _this = this;
-    axios.get('https://apimagiccatalog.herokuapp.com/api/valibrasil/product/single/' + this.props.match.params.id)
+    axios.get('http://api.loadfms.com:8081/api/valibrasil/product/single/' + this.props.match.params.id)
       .then(function (response) {
         console.log(response.data.rows[0]); // ex.: { user: 'Your User'}
         _this.setState({ item: response.data.rows[0] });

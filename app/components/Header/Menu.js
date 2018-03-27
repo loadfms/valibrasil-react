@@ -18,7 +18,7 @@ class Menu extends Component {
 
   loadmenu() {
     let _this = this;
-    axios.get('https://apimagiccatalog.herokuapp.com/api/valibrasil/category')
+    axios.get('http://api.loadfms.com:8081/api/valibrasil/category')
       .then(function (response) {
         _this.setState({ items: response.data.rows });
       });

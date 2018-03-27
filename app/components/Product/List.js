@@ -23,7 +23,7 @@ class Detail extends Component {
     loaditems(category) {
         let _this = this;
         _this.setState({ category: category });
-        axios.get('https://apimagiccatalog.herokuapp.com/api/valibrasil/product/' + category)
+        axios.get('http://api.loadfms.com:8081/api/valibrasil/product/' + category)
             .then(function (response) {
                 console.log(1);
                 _this.setState({ items: response.data.rows });
