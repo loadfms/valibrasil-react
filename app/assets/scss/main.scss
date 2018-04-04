@@ -164,6 +164,7 @@ hr {
       }
       &__info{
         padding: 20px 15px;
+
         &__title{
           text-align: left;
           font-size: 14px;
@@ -171,6 +172,10 @@ hr {
           display: block;
           font-weight: 400;
           padding-bottom: 15px;
+          white-space: nowrap; 
+          overflow: hidden;
+          text-overflow: ellipsis;  
+          width: 233px;
         }
       }
     }
