@@ -33,19 +33,15 @@ class Detail extends Component {
     render() {
         if (this.state.items) {
             return (
-                <div>
-                    <div className="listproducts--banner">
-                        <span className="listproducts--banner__title"> Temos mais de {this.state.items.length} itens em  {this.state.category}!</span>
-                        <span className="listproducts--banner__subtitle"> Não encontrou o que procurava ou precisa de um orçamento? Deixe-nos saber! Entre em contato pelo email valibrasil@terra.com.br e conte-nos a sua necessidade.</span>
-                    </div>
-                    <div className="listproducts">
-                        <div className="listproducts--list">
-                            <ul className="products--list">
-                                {this.state.items.map((item, index) => (
-                                    <Card product={item} />
-                                ))}
-                            </ul>
-                        </div>
+                <div className="listproducts">
+                    <span className="listproducts--title">{this.state.category}</span>
+                    <hr />
+                    <div className="listproducts--list">
+                        <ul className="products--list">
+                            {this.state.items.map((item, index) => (
+                                <Card product={item} />
+                            ))}
+                        </ul>
                     </div>
                 </div>
             );

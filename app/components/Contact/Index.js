@@ -2,10 +2,9 @@ import React from 'react';
 
 const Index = () => {
   return (
-    <div>
-      <div className="listproducts--banner">
-        <span className="listproducts--banner__title"> Conheça a ValiBrasil!</span>
-      </div>
+    <div className="listproducts">
+      <span className="listproducts--title"> Conheça a Valibrasil</span>
+      <hr />
       <div className="contact">
         <div className="contact--content">
           <div className="contact--content__first">

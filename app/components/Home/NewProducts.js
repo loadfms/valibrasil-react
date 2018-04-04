@@ -29,6 +29,7 @@ class NewProducts extends Component {
     return (
       <div className="newproducts">
         <span className="newproducts--title">Novidades</span>
+        <hr />
         <div className="newproducts--list">
           <ul className="products--list">
             {this.state.products.map((item, index) => (
