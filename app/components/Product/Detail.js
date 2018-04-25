@@ -13,6 +13,7 @@ class Detail extends Component {
   componentWillMount() {
     this.loaditem();
   }
+  
 
   loaditem() {
     let _this = this;
@@ -20,6 +21,7 @@ class Detail extends Component {
       .then(function (response) {
         console.log(response.data.rows[0]); // ex.: { user: 'Your User'}
         _this.setState({ item: response.data.rows[0] });
+        document.title = this.state.item.name + " na Valibrasil"
       });
   }
 

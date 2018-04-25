@@ -37,16 +37,15 @@ hr {
   &--info{
     border-bottom: solid 1px $color1;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 14px;
     color: white;
     text-align: right;
-    text-transform: uppercase;
     background-color: $color8;
     &_icon{
       font-size: 25px;
       display: inline;
       vertical-align: middle;
-      margin-right: 10px;
+      margin: 0 10px;
     }
   }
 
@@ -250,10 +249,12 @@ hr {
       font-family: 'Raleway';
       margin-bottom: 10px;
     }
-    &__first{
-      float: left;
-      margin-right: 40px;
+    &__first, &__second{
+      width: 49%;
+      display: inline-block;
+      margin-left: 10px;
     }
+
   }
 
 }

@@ -9,9 +9,9 @@ const Index = () => {
         <span className="footer--about__subtitle">Avenida Joaquim Alves Corrêa, 3224 - Valinhos, SP</span>
       </div>
       <div className="footer--about">
-        <span className="footer--about__title">Telefone</span>
-        
+        <span className="footer--about__title">Contato</span>
         <span className="footer--about__subtitle"><i class="fab fa-whatsapp"></i> (11) 95030-0039</span>
+        <span className="footer--about__subtitle"><i class="far fa-envelope"></i> valibrasil@terra.com.br</span>
       </div>
     </div>
   );
