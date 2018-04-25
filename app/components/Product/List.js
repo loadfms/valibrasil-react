@@ -14,6 +14,7 @@ class Detail extends Component {
 
     componentWillMount() {
         this.loaditems(this.props.match.params.name);
+        document.title = this.props.match.params.name + " na Valibrasil"
     }
 
     componentWillReceiveProps(nextProps) {

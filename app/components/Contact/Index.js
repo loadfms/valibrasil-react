@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Index = () => {
+  document.title = "Conheça a valibrasil"
+  
   return (
     <div className="listproducts">
       <span className="listproducts--title"> Conheça a Valibrasil</span>

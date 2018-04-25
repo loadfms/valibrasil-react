@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Slider = () => {
+  document.title = "Valibrasil, loja de descartáveis"
+  
   return (
     <div className="home--cards">
       <div className="home--cards_card">
