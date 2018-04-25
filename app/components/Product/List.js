@@ -14,7 +14,6 @@ class Detail extends Component {
 
     componentWillMount() {
         this.loaditems(this.props.match.params.name);
-        document.title = this.props.match.params.name + " na Valibrasil"
     }
 
     componentWillReceiveProps(nextProps) {
@@ -27,6 +26,7 @@ class Detail extends Component {
         axios.get('http://api.loadfms.com:8081/api/valibrasil/product/' + category)
             .then(function (response) {
                 _this.setState({ items: response.data.rows });
+                document.title = this.props.match.params.name + " na Valibrasil"
             });
     }
 
