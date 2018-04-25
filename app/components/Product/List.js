@@ -25,7 +25,6 @@ class Detail extends Component {
         _this.setState({ category: category });
         axios.get('http://api.loadfms.com:8081/api/valibrasil/product/' + category)
             .then(function (response) {
-                console.log(1);
                 _this.setState({ items: response.data.rows });
             });
     }

@@ -19,9 +19,8 @@ class Detail extends Component {
     let _this = this;
     axios.get('http://api.loadfms.com:8081/api/valibrasil/product/single/' + this.props.match.params.id)
       .then(function (response) {
-        console.log(response.data.rows[0]); // ex.: { user: 'Your User'}
         _this.setState({ item: response.data.rows[0] });
-        document.title = this.state.item.name + " na Valibrasil"
+        document.title = response.data.rows[0].name + " na Valibrasil"
       });
   }
 

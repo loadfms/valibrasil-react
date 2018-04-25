@@ -20,7 +20,6 @@ class NewProducts extends Component {
     let _this = this;
     axios.get('http://api.loadfms.com:8081/api/valibrasil/product/cover')
       .then(function (response) {
-        console.log(response.data.rows); // ex.: { user: 'Your User'}
         _this.setState({ products: response.data.rows });
       });
   }
