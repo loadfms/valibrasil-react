@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Index = () => {
-  document.title = "Conheça a valibrasil"
+  document.title = "Conheça a Valibrasil"
   
   return (
     <div className="listproducts">
