@@ -6,7 +6,7 @@ const Card = (props) => {
   return (
     <Link to={'/produto/' + slugify(props.product.name.toLowerCase()) + '/' + props.product.id}>
       <li className="products--list__card">
-        <img alt="product" src={props.product.image} />
+        <img alt="product" src={props.product.image} alt={props.product.name.toLowerCase()} title={props.product.name.toLowerCase()}/>
         <div className="products--list__card__info">
           <span className="products--list__card__info__title">{props.product.name}</span>
         </div>
