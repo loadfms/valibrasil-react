@@ -29,7 +29,7 @@ class Detail extends Component {
       return (
         <div className="product">
           <div className="product--image">
-            <img src={this.state.item.image} alt={props.product.name.toLowerCase()} title={props.product.name.toLowerCase()} />
+            <img src={this.state.item.image} alt={this.state.item.name.toLowerCase()} title={this.state.item.name.toLowerCase()} />
           </div>
           <div className="product--detail">
             <span className="product--detail__title">{this.state.item.name}</span>
